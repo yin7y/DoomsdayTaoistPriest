@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     Vector2 moveVector;
     
     [SerializeField] float moveSpeed;
+    bool isAtking;
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
@@ -28,12 +29,23 @@ public class PlayerController : MonoBehaviour
         else{
             playerAnim.SetBool("isMove", false);
         }
+        if(playerAnim.GetCurrentAnimatorStateInfo(0).IsName("isAttack") && playerAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f){
+            playerAnim.SetBool("isAttack", false);
+        }
     }
     public void Move(InputAction.CallbackContext _ctx){
         moveVector = _ctx.ReadValue<Vector2>();
         print(moveVector);
     }
-    public void Flip(){
+    public void Attack(InputAction.CallbackContext _ctx){
+        if(_ctx.started){
+            playerAnim.SetBool("isAttack", true);
+            isAtking = true;
+            print("ATTACK!!!");
+        }
+    }
+    
+    void Flip(){
         Vector3 newScale = transform.localScale;
         if(moveVector.x < 0){
             newScale.x = -1;   
