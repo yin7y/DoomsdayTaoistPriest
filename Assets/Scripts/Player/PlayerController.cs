@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
         else{
             playerAnim.SetBool("isMove", false);
         }
-        if(playerAnim.GetCurrentAnimatorStateInfo(0).IsName("isAttack") && playerAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f){
+        if(playerAnim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && playerAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f){
             playerAnim.SetBool("isAttack", false);
         }
     }
