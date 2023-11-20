@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2362,6 +2362,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3127896725358837019, guid: d61d2ebc0616bc44d9b9875cf0593473, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -600606678, guid: 5d9b99faa34f5ff4ba13e45449707c6f, type: 3}
     - target: {fileID: 3288236290239908626, guid: d61d2ebc0616bc44d9b9875cf0593473, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2406,6 +2410,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3502474000779987159, guid: d61d2ebc0616bc44d9b9875cf0593473, type: 3}
+      propertyPath: m_Text
+      value: Lv.10/10
+      objectReference: {fileID: 0}
     - target: {fileID: 3502739729472362962, guid: d61d2ebc0616bc44d9b9875cf0593473, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2464,6 +2472,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3627778134908750925, guid: d61d2ebc0616bc44d9b9875cf0593473, type: 3}
       propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3778034469374369871, guid: d61d2ebc0616bc44d9b9875cf0593473, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3778034469374369871, guid: d61d2ebc0616bc44d9b9875cf0593473, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3780497359796529042, guid: d61d2ebc0616bc44d9b9875cf0593473, type: 3}
@@ -2862,6 +2878,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5578314133897348695, guid: d61d2ebc0616bc44d9b9875cf0593473, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 195916634, guid: 5d9b99faa34f5ff4ba13e45449707c6f, type: 3}
     - target: {fileID: 5594331053468070378, guid: d61d2ebc0616bc44d9b9875cf0593473, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
