@@ -1,0 +1,30 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BasePanel : MonoBehaviour
+{
+    protected bool isRemove = false;
+    protected new string name;
+    
+    protected virtual void Awake(){
+        
+    }
+    
+    public virtual void SetActive(bool active){
+        gameObject.SetActive(active);
+    }
+    public virtual void OpenPanel(string name){
+        this.name = name;
+        SetActive(true);
+    }
+    public virtual void ClosePanel(){
+        isRemove = true;
+        SetActive(false);
+        Destroy(gameObject);
+        // 移除緩存  表示介面沒打開
+        if(UIManager.Instance.panelDict.ContainsKey(name)){
+            UIManager.Instance.panelDict.Remove(name);
+        }
+    }
+}

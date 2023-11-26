@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using NUnit.Framework.Constraints;
 using UnityEditor;
 using UnityEngine;
 
@@ -39,5 +40,9 @@ public class GMCmd
         foreach(PackageLocalItem item in readItems){
             Debug.Log(item);
         }
+    }
+    [MenuItem("GMCmd/打開背包主介面")]
+    public static void OpenPackagePanel(){
+        UIManager.Instance.OpenPanel(UIConst.PackagePanel);
     }
 }

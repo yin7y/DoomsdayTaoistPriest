@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     Vector2 moveVector;
     
     [SerializeField] float moveSpeed;
-    bool isAtking;
+
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
     public void Attack(InputAction.CallbackContext _ctx){
         if(_ctx.started){
             playerAnim.SetBool("isAttack", true);
-            isAtking = true;
+
             print("ATTACK!!!");
         }
     }
